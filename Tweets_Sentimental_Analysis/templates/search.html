@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Analyze Twitter Government Laws Sentiments by Hashtag</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Raleway:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Raleway:wght@300&family=Sacramento&display=swap');
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/search" class="active">Search & Analyze Tweets</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div style="height: auto; width: auto;">
+            <h1>Search Tweets with<br> Hashtags #️⃣</h1>
+        </div>
+        <br><br><br>
+
+        <img src="{{ url_for('static', filename='images/5.png') }}" alt="" class="logo">
+    </section>
+
+    <form action="" method="POST" class="input_form" id="search_form" onsubmit="showTable()">
+        <label for="Hashtag">Search a Hashtag</label><br><br>
+        <input type="text" id="Hashtag" name="words"><br><br><br>
+        <label for="From_date">From Date</label><br><br>
+        <input type="text" placeholder="yyyy-mm-dd" id="From_date" name="date_since"><br><br><br>
+        <input type="submit" value='Get Result' id="button">
+    </form>
+
+
+</body>
+
+</html>

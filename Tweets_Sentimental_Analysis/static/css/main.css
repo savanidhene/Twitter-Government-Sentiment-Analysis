@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 1500px;
+    background: url(/static/images/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    display: inline-block;
+    position: fixed;
+    right: 10vw;
+    top: 5vh;
+    font-family: 'Baloo 2', cursive;
+    font-size: 54px;
+    font-weight: lighter;
+    line-height: 1.2;
+    text-align: right;
+    color: #EDEDED;
+    z-index: 8;
+}
+
+h2 {
+    position: fixed;
+    font-family: "Quicksand", cursive;
+    right: 11vw;
+    top: 60vh;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 32px;
+    max-width: fit-content;
+    text-align: right;
+    z-index: 15;
+    color: #FFFFFF;
+    line-height: normal;
+    text-shadow: 1px 1px 4px black, 0 0 8px #0066CC, 0 0 12px #0000;
+    width: 40vw;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Quicksand";
+    z-index: 100000;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 60px;
+    font-family: Quicksand;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 10000;
+    padding: 10px;
+}
+
+header ul li a:hover {
+    background-color: rgba(0, 102, 204, 0.3);
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 18px #0066CC, 0 0 15px #0066cc;
+}
+
+.active {
+    background-color: rgba(0, 102, 204, 0.3);
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 18px #0066CC, 0 0 15px #0066cc;
+}
+
+section {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.bgimage {
+    position: fixed;
+    width: 908px;
+    height: 469px;
+    bottom: 5vh;
+    right: 10vw;
+}
+
+.logo {
+    position: fixed;
+    width: auto;
+    height: auto;
+    z-index: 9;
+    left: 7vw;
+    top: 20vh;
+}
+
+#line1 {
+    font-size: 52px;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+.line2 {
+    opacity: 0;
+}
+
+.line3 {
+    opacity: 0;
+}
+
+.showLine1 {
+    opacity: 1;
+    transition: opacity 2s ease-in;
+}
+
+.showLine2 {
+    opacity: 1;
+    width: fit-content;
+    font-size: 34px;
+    transition: opacity 2s ease-in;
+}
+
+.showLine3 {
+    opacity: 1;
+    font-size: 72px;
+    width: fit-content;
+    transition: opacity 2s ease-in;
+}
+
+.hideLine1 {
+    opacity: 0;
+}
+
+.hideLine2 {
+    opacity: 0;
+}
+
+.hideLine3 {
+    opacity: 0;
+}

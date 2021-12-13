@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url('C:\Savani\Algorithmic Electronics\twitter sentiment\fonts\Quicksand_Light.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(/static/images/3.png);
+    background-size: cover;
+    left: 0;
+    right: 0;
+    align-content: center;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5.54016620498615vh 3.2552083333333335vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Quicksand";
+    z-index: 100000;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 3.90625vw;
+    font-family: Quicksand;
+    font-size: 22px;
+    line-height: 2.770083102493075vh;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 10000;
+    padding: 10px;
+}
+
+header ul li a:hover {
+    background-color: rgba(0, 102, 204, 0.3);
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 18px #0066CC, 0 0 15px #0066cc;
+}
+
+#btn {
+    color: #FFFFFF;
+    background-color: #0000;
+    font-family: "Quicksand";
+    font-size: 2em;
+    padding: 1vw;
+    border-radius: 20px;
+    margin-left: 45vw;
+    margin-top: 5vh;
+}
+
+#btn:hover {
+    color: #0066cc;
+}
+
+table {
+    width: auto;
+    padding: 10px;
+    border-collapse: collapse;
+    font-family: 'Quicksand';
+    align-content: center;
+    margin: 5vh auto 0;
+    background-color: rgba(13, 13, 58, 0.7);
+    border-radius: 20px;
+    position: relative;
+    z-index: 50;
+}
+
+th,
+td {
+    color: white;
+    font-family: 'Quicksand';
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid #ddd;
+}
+
+div {
+    justify-items: center;
+    margin-top: 10%;
+}
+
+h3 {
+    color: #ddd;
+    font-family: 'Raleway';
+    text-align: center;
+}

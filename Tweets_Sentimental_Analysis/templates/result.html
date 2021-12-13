@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Analyze Sentiment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Raleway:wght@300&family=Sacramento&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Search & Analyze Tweets</a></li>
+        </ul>
+    </header>
+    <div>
+        <h3 id="positive">Positive Tweets Percent : {{positive}} %</h3>
+        <br>
+        <h3 id="negative">Negative Tweets Percent : {{negative}} %</h3>
+    </div>
+
+    <table id="result">
+        <tr>
+            <td id='username'>Username</td>
+            <td id="totaltweets">Totaltweets</td>
+            <td id="retweetcount">Retweet Count</td>
+            <td id="text">Text</td>
+            <td id="hashtags">Hashtags</td>
+            <td id="analysis">Analysis</td>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{row["username"]}}</td>
+            <td>{{row["totaltweets"]}}</td>
+            <td>{{row["retweetcount"]}}</td>
+            <td>{{row["text"]}}</td>
+            <td>{{row["hashtags"]}}</td>
+            <td>{{row["analysis"]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <button id="btn">Go Back</button>
+
+
+</body>
+
+<script type="text/javascript">
+    document.getElementById("btn").onclick = function() {
+        location.href = "/search";
+    };
+</script>
+
+</html>

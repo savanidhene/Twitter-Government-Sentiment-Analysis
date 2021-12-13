@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(/static/images/3.png);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    align-content: center;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+    display: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+h1 {
+    display: inline-block;
+    position: absolute;
+    right: 10vw;
+    top: 15vh;
+    font-family: 'Quicksand', cursive;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: lighter;
+    text-align: right;
+    color: #EDEDED;
+    z-index: 8;
+    padding-bottom: 10vh;
+}
+
+h2 {
+    position: absolute;
+    font-family: "Quicksand", cursive;
+    right: 11vw;
+    top: 60vh;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    max-width: fit-content;
+    text-align: right;
+    z-index: 15;
+    color: #FFFFFF;
+    line-height: normal;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5.54016620498615vh 3.2552083333333335vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Quicksand";
+    z-index: 100000;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 3.90625vw;
+    font-family: Quicksand;
+    font-size: 22px;
+    line-height: 2.770083102493075vh;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 10000;
+    padding: 10px;
+}
+
+header ul li a:hover {
+    background-color: rgba(0, 102, 204, 0.3);
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 18px #0066CC, 0 0 15px #0066cc;
+}
+
+.active {
+    background-color: rgba(0, 102, 204, 0.3);
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 18px #0066CC, 0 0 15px #0066cc;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    height: 5vh;
+    width: 40vw;
+    background-color: black;
+    color: #0077C0;
+}
+
+.input_form {
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 10vh;
+    right: 10vw;
+    text-align: right;
+    margin-bottom: 5vh;
+}
+
+label {
+    color: #FFFFFF;
+    background-color: #0000;
+    font-family: "Quicksand";
+    font-size: 2em;
+}
+
+.logo {
+    position: fixed;
+    width: auto;
+    height: auto;
+    z-index: 9;
+    left: 7vw;
+    top: 20vh;
+}
+
+#button {
+    color: #FFFFFF;
+    background-color: #0000;
+    font-family: "Quicksand";
+    font-size: 2em;
+    padding: 1vw;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#button:hover {
+    color: #0066cc;
+}
